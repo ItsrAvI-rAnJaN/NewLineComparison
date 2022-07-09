@@ -13,6 +13,7 @@ namespace LineComparison
             // Creating Instance of Class Line Comparison..
             LineComparison objLength = new LineComparison();
             objLength.calcLineLength();
+            objLength.CheckLengthEqual();
 
             Console.ReadKey();
         }
