@@ -14,6 +14,7 @@ namespace LineComparison
             LineComparison objLength = new LineComparison();
             objLength.calcLineLength();
             objLength.CheckLengthEqual();
+            objLength.comparelineLength();
 
             Console.ReadKey();
         }

@@ -14,23 +14,23 @@ namespace LineComparison
         public void calcLineLength()
         {
             // Taking Input from users of Line 1 X-Y Coordinates
-            Console.WriteLine("Enter the the point 1 Coordinate of X1 :  ");
+            Console.Write("Enter the the point 1 Coordinate of X1 :  ");
             int X1=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 2 Coordinate of X2 :  ");
+            Console.Write("Enter the the point 2 Coordinate of X2 :  ");
             int X2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 1 Coordinate of Y2:  ");
+            Console.Write("Enter the the point 1 Coordinate of Y2:  ");
             int Y1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 1 Coordinate of Y2 :  ");
+            Console.Write("Enter the the point 1 Coordinate of Y2 :  ");
             int Y2 = Convert.ToInt32(Console.ReadLine());
 
             // Taking Input from users of Line 2 X-2 Coordinates
-            Console.WriteLine("Enter the the point 1 Coordinate of X3 :  ");
+            Console.Write("Enter the the point 1 Coordinate of X3 :  ");
             int X3 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 2 Coordinate of X4 :  ");
+            Console.Write("Enter the the point 2 Coordinate of X4 :  ");
             int X4 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 1 Coordinate of Y3:  ");
+            Console.Write("Enter the the point 1 Coordinate of Y3:  ");
             int Y3 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the the point 1 Coordinate of Y4 :  ");
+            Console.Write("Enter the the point 1 Coordinate of Y4 :  ");
             int Y4 = Convert.ToInt32(Console.ReadLine());
 
             // calc line 1 Length
@@ -48,6 +48,7 @@ namespace LineComparison
         }
         public void CheckLengthEqual()
         {
+            Console.WriteLine("Check Both Line Length Equal or Not :- ");
             if(Line_1_Length == Line_2_Length)
             {
                 Console.WriteLine("The Length of Both Lines are Equal");
@@ -55,6 +56,24 @@ namespace LineComparison
             else
             {
                 Console.WriteLine("The Length of Both Lines Are Not Equal");
+            }
+        }
+        public void comparelineLength()
+        {
+            int CompareLength = Line_1_Length.CompareTo(Line_2_Length);
+            Console.WriteLine("\nComparision b/w Both Length of Line :-");
+
+            if (CompareLength > 0)
+            {
+                Console.WriteLine("Length of Line 1 is Greater than Line 2 ");
+            }
+            else if(CompareLength < 0)
+            {
+                Console.WriteLine("Length of Line 2 is Greater than Line 1");
+            }
+            else
+            {
+                Console.WriteLine("Length of Both Lines Are Equal");
             }
         }
 
